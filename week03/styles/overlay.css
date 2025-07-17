@@ -17,7 +17,9 @@ h1 {
 
 .herodiv {
     margin: 10px auto;
-    position: relative;
+    /* position: relative; */
+    /*This is removed to test the position of the stat details image */
+
     /* If removed, what happens? */
 }
 
