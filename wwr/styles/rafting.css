@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #2E3B87;
+    --secondary-color: #5E6BBF;
+    --accent1-color: #A8B1E6;
+    --accent2-color: #D3D7F2;
+    --heading-font: "Changa One", sans-serif;
+    --body-font: "Inter Tight", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+main {
+    padding: 16px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+}
+
+section {
+    margin: 16px;
+    padding: 8px;
+}
+
+.adventures .adventure-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.adventures img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 16px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
+}
