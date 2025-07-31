@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- saved from url=(1254)https://035b67c2a6b32fb3d089f2c0191aaad438c43a02.mdnplay.dev/en-US/docs/Web/HTML/Reference/Elements/table/runner.html?state=nVbdb9s2EP9XDnyqAWuiaNlOFVVAtxbLijUDlhZ70Qslni0uNCmQdGKj6P8%2B6MOpVMeOswcBp9Px98HjEfpGSudIQjwvFMK3XAMUxgq0QWmU4rXDBA7R9eCrq3kp9ToBOsgmwOodOKOkALsu3kQxhf6ZtGUro33SBADRot5BTv6qUcMd1y4n0%2B7DDaoH9LLk%2Fft7K7nqY8e1CxxaubrO9fdc57rktZdGd8r7l8BJgQkUxnuzaXlrLkSrNqL17klJ8IhyXfmmUokDoK%2BmufZiuBUJRGNbCwr9MxnDx%2FUOFi1Dj9XBPKBtDKmAK7nWA2V9FXIBGXjbk%2FLyfm3NVoumB8YmLSljV8BiCiyeT45XJtpXgVkFfl%2FjGzYZNbJje6E3P%2BMp7vwBsMlUI4Zocl7qHNh8Dow9K%2FU8NDsP3cGOoQsj9t3%2BtWgraQcELZjHnT9svsKVv35BPHsLLI6fYRhJxQfU59XOlsBmTd%2FYCbVivBtHYm1zQJ%2BWrozxw4PS9debumuu4K7CE5P3ikPVsnRj0IXitK6Tg0SmpPIbRRKStldL1tSm%2FYBm3TTfee63DswKfIVQqm0BG9wUaB0wyqJ2RThckranqF%2BdettH7QdwpanxXU5Ko3IC1jy6mut3OWE5yW75BtPQVxcv%2BOPDC%2BWlUYPyz53sStbwgXt0r%2BL6lSuuy6G%2BNHzydtZl9slIjeI8W%2FZbg65GZU8ETe6wpWl7NF%2Fgteax8cvtmlv0cLve7lH%2FJEBkMVvOoigNvRilUy83CIJ7bILGPo1oQBcBnTVmthphNoUmmYZNRXaEoEN%2BlKO%2FUDpIXrB5nYmP4oFbAb9zJbW7l0cm5rNZtJxfZCIKaBRErQmut9zuIeqMRKeMPIeyDGgc0KucZO9rKxVctRDLUxCz5f80fmNcJeGW3%2FPN1vIj3wsavY3ZRYpZQJcB65qn9sA60%2Bw13YvmJ1yk4Y%2FzmLY30SXmBoMZ5yT7YjxXUBxNWN9hdpq7J0zDw%2FVFpuTf5k%2BJTImzJUlIiDr4ehcKU7rwHyzCmy%2Bf%2Fwz%2FxhVa1CWGHxVuUHvXAYTk%2B38%3D -->
+<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_HKZAj9"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+              /* Legacy css to support existing live samples */
+              body {
+                padding: 0;
+                margin: 0;
+              }
+
+              svg:not(:root) {
+                display: block;
+              }
+
+              .playable-code {
+                background-color: #f4f7f8;
+                border: none;
+                border-left: 6px solid #558abb;
+                border-width: medium medium medium 6px;
+                color: #4d4e53;
+                height: 100px;
+                width: 90%;
+                padding: 10px 10px 0;
+              }
+
+              .playable-canvas {
+                border: 1px solid #4d4e53;
+                border-radius: 2px;
+              }
+
+              .playable-buttons {
+                text-align: right;
+                width: 90%;
+                padding: 5px 10px 5px 26px;
+              }
+            </style>
+        
+        
+        <style id="css-output">
+          table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid rgb(140 140 140);
+  font:
+    16px "Open Sans",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 4px 6px;
+}
+
+th {
+  vertical-align: bottom;
+}
+
+thead > tr {
+  background-color: rgb(228 240 245);
+}
+
+thead > tr:nth-of-type(2) {
+  border-bottom: 2px solid rgb(140 140 140);
+}
+
+thead > tr:last-of-type > th:nth-of-type(1) {
+  background-color: rgb(225 255 225);
+}
+
+thead > tr:last-of-type > th:nth-of-type(2) {
+  background-color: rgb(255 225 225);
+}
+
+tbody > tr > th:first-of-type {
+  text-align: left;
+  background-color: rgb(225 229 244);
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tbody > tr > td:last-of-type {
+  text-align: right;
+}
+
+tfoot > tr {
+  border-top: 2px dashed rgb(140 140 140);
+  background-color: rgb(228 240 245);
+}
+
+tfoot th,
+tfoot td {
+  text-align: right;
+  font-weight: bold;
+}
+
+        </style>
+        <script>
+          const consoleProxy = new Proxy(console, {
+            get(target, prop) {
+              if (typeof target[prop] === "function") {
+                return (...args) => {
+                  try {
+                    window.parent.postMessage(
+                      { typ: "console", prop, args },
+                      "*"
+                    );
+                  } catch {
+                    try {
+                      window.parent.postMessage(
+                        {
+                          typ: "console",
+                          prop,
+                          args: args.map((x) => {
+                            try {
+                              window.structuredClone(x);
+                              return x;
+                            } catch {
+                              return { _MDNPlaySerializedObject: x.toString() };
+                            }
+                          }),
+                        },
+                        "*"
+                      );
+                    } catch {
+                      window.parent.postMessage(
+                        {
+                          typ: "console",
+                          prop: "warn",
+                          args: [
+                            "[Playground] Unsupported console message (see browser console)",
+                          ],
+                        },
+                        "*"
+                      );
+                    }
+                  }
+                  target[prop](...args);
+                };
+              }
+              return target[prop];
+            },
+          });
+
+          window.console = consoleProxy;
+          window.addEventListener("error", (e) => console.log(e.error));
+        </script>
+        
+        
+      </head>
+      <body>
+        <table>
+  <caption>
+    Status of the club members 2021
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col" rowspan="2">Name</th>
+      <th scope="col" rowspan="2">ID</th>
+      <th scope="col" colspan="2">Membership Dates</th>
+      <th scope="col" rowspan="2">Balance</th>
+    </tr>
+    <tr>
+      <th scope="col">Joined</th>
+      <th scope="col">Canceled</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Margaret Nguyen</th>
+      <td>427311</td>
+      <td><time datetime="2010-06-03">June 3, 2010</time></td>
+      <td>n/a</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Edvard Galinski</th>
+      <td>533175</td>
+      <td><time datetime="2011-01-13">January 13, 2011</time></td>
+      <td><time datetime="2017-04-08">April 8, 2017</time></td>
+      <td>37.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Hoshi Nakamura</th>
+      <td>601942</td>
+      <td><time datetime="2012-07-23">July 23, 2012</time></td>
+      <td>n/a</td>
+      <td>15.00</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row" colspan="4">Total balance</th>
+      <td>52.00</td>
+    </tr>
+  </tfoot>
+</table>
+
+        <script type="">
+          ;
+        </script>
+        <script>
+          try {
+            window.parent.postMessage({ typ: "ready" }, "*");
+          } catch (e) {
+            console.error("[Playground] Failed to post ready message", e);
+          }
+        </script>
+      
+    
+  </body></html>

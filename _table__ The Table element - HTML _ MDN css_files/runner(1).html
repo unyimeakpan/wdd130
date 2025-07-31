@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0614)https://0c87c1524d30925c7f63ff57c57930a661211cb9.mdnplay.dev/en-US/docs/Web/HTML/Reference/Elements/table/runner.html?state=jZJBS8NAEIX%2FyrAnhcTdTdoGY8xBLFaxPVjFSy6b7NjEJhvZ3Yql%2BN8lTZQmVOhh2OEx783HMjuSGUNCYkVaIuwSBZDWWqIOwfv4AlOXhQS9Ss%2F4iEFX51eJ%2Bk5UomzuJMrKvo33bRMGXXU24pDcViUJSbRfGjfmyOr923R5vBAVRtTmB9L97UCYY5WihmWhsuHsjSjFoRrRLr2%2FZS70Smi0sFhttqh6ITIeeYHPeUStPBAjW1QIUlhsmuuEeIwzl01c5ickftgoBN%2BBRoxoMxEP%2FOyCsT%2FpH6yp%2FBRawp0oC2XWxQBr7Ps8GJ%2BAxV3GXb7HEmoj9BZ4i8aPo%2FnBCWyz2uQFLMRaVBstBmgTxi9H3glonssC12t%2FrNyC13J5x7n4%2BAhXRH9Phzjkvblf4hCjMxISisp9WVJZZ4a%2BYkpnz%2FNH%2BoRvqFFlSKclVqisaQMo%2Bf4B -->
+<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_iTpwa0"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+              /* Legacy css to support existing live samples */
+              body {
+                padding: 0;
+                margin: 0;
+              }
+
+              svg:not(:root) {
+                display: block;
+              }
+
+              .playable-code {
+                background-color: #f4f7f8;
+                border: none;
+                border-left: 6px solid #558abb;
+                border-width: medium medium medium 6px;
+                color: #4d4e53;
+                height: 100px;
+                width: 90%;
+                padding: 10px 10px 0;
+              }
+
+              .playable-canvas {
+                border: 1px solid #4d4e53;
+                border-radius: 2px;
+              }
+
+              .playable-buttons {
+                text-align: right;
+                width: 90%;
+                padding: 5px 10px 5px 26px;
+              }
+            </style>
+        
+        
+        <style id="css-output">
+          table {
+  border: 2px solid rgb(140 140 140);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+}
+
+        </style>
+        <script>
+          const consoleProxy = new Proxy(console, {
+            get(target, prop) {
+              if (typeof target[prop] === "function") {
+                return (...args) => {
+                  try {
+                    window.parent.postMessage(
+                      { typ: "console", prop, args },
+                      "*"
+                    );
+                  } catch {
+                    try {
+                      window.parent.postMessage(
+                        {
+                          typ: "console",
+                          prop,
+                          args: args.map((x) => {
+                            try {
+                              window.structuredClone(x);
+                              return x;
+                            } catch {
+                              return { _MDNPlaySerializedObject: x.toString() };
+                            }
+                          }),
+                        },
+                        "*"
+                      );
+                    } catch {
+                      window.parent.postMessage(
+                        {
+                          typ: "console",
+                          prop: "warn",
+                          args: [
+                            "[Playground] Unsupported console message (see browser console)",
+                          ],
+                        },
+                        "*"
+                      );
+                    }
+                  }
+                  target[prop](...args);
+                };
+              }
+              return target[prop];
+            },
+          });
+
+          window.console = consoleProxy;
+          window.addEventListener("error", (e) => console.log(e.error));
+        </script>
+        
+        
+      </head>
+      <body>
+        <table>
+  <tbody><tr>
+    <th>Name</th>
+    <th>ID</th>
+    <th>Member Since</th>
+    <th>Balance</th>
+  </tr>
+  <tr>
+    <th>Margaret Nguyen</th>
+    <td>427311</td>
+    <td><time datetime="2010-06-03">June 3, 2010</time></td>
+    <td>0.00</td>
+  </tr>
+  <tr>
+    <th>Edvard Galinski</th>
+    <td>533175</td>
+    <td><time datetime="2011-01-13">January 13, 2011</time></td>
+    <td>37.00</td>
+  </tr>
+  <tr>
+    <th>Hoshi Nakamura</th>
+    <td>601942</td>
+    <td><time datetime="2012-07-23">July 23, 2012</time></td>
+    <td>15.00</td>
+  </tr>
+</tbody></table>
+
+        <script type="">
+          ;
+        </script>
+        <script>
+          try {
+            window.parent.postMessage({ typ: "ready" }, "*");
+          } catch (e) {
+            console.error("[Playground] Failed to post ready message", e);
+          }
+        </script>
+      
+    
+  </body></html>
