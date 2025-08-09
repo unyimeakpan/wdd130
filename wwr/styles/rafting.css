@@ -286,7 +286,6 @@ figcaption {
 
 }
 
-
 .contact-form {
     background-color: var(--accent2-color);
     margin: 2rem;
@@ -571,4 +570,57 @@ footer {
 
 .trip-table tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+/* Team / Employee profiles */
+.team-profiles {
+  margin: 2rem 0;
+}
+
+.team-profiles h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* container for the profiles: left-to-right, wraps on small screens */
+.profiles {
+  display: flex;
+  gap: 1.5rem;            /* space between profiles */
+  align-items: start;
+  justify-content: flex-start;
+  flex-wrap: wrap;        /* wrap to next line on small viewports */
+}
+
+/* individual profile card */
+.profile {
+  width: 220px;           /* fixed card width—adjust as needed */
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* photo styling */
+.profile-photo {
+  width: 100%;
+  height: 220px;          /* keep uniform height */
+  object-fit: cover;      /* crop nicely while keeping proportions */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* figcaption */
+.profile figcaption {
+  line-height: 1.2;
+  color: #222;
+}
+
+/* small screens: make them full-width stacked */
+@media (max-width: 640px) {
+  .profile {
+    width: 100%;
+  }
+  .profile-photo {
+    height: 180px;
+  }
 }
