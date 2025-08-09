@@ -431,3 +431,144 @@ footer {
 .cta-button:hover {
     background-color: var(--accent1-color);
 }
+.trip-hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+
+}
+.trip-hero .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0;
+}
+.trip-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    color: var(--accent2-color);
+}
+.trip-hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+.trip-hero-content .cta-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.trip-hero-content .cta-button:hover {
+    background-color: var(--accent1-color);
+}
+.trip-hero-content .cta-subtitle {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+.trip-cta {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.trip-cta h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;           
+    padding-top: 0.2rem; 
+}
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 2rem 0;
+}
+
+.trip-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.trip-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.trip-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.trip-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.trip-button:hover {
+    background-color: var(--accent1-color);
+}
+
+.trip-table-section {
+    margin: 2rem 0;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
